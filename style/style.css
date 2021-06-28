@@ -1,0 +1,427 @@
+#sobre-mi {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#estudios {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.is-shady {
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  border-radius: 4px;
+}
+
+.is-shady:hover {
+  -webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
+
+#tags {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#resume {
+  text-align: center;
+}
+
+#portafolio {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  text-align: center;
+}
+
+.card-header {
+  text-align: center;
+}
+
+#tarjeta,
+#skills {
+  -webkit-box-shadow: 0 0.5em 1em -0.125em;
+          box-shadow: 0 0.5em 1em -0.125em;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+#iconoF,
+#iconoJ,
+#iconoP,
+#iconoI {
+  margin-bottom: 20px;
+}
+
+.card-header p {
+  display: unset;
+}
+
+#nosotrasHover:hover,
+#cursosHover:hover,
+#recetariosHover:hover,
+#contactoHover:hover {
+  background-color: #fbfaf8;
+}
+
+.items:hover,
+.icon i:hover {
+  color: #d5decb;
+}
+
+.progress {
+  color: pink;
+}
+
+#titulo {
+  position: absolute;
+  font-family: "Quicksand", sans-serif;
+}
+
+.items,
+i {
+  font-family: "Quicksand", sans-serif;
+  color: #fbfaf8;
+}
+
+#subtitulo {
+  display: none;
+  font-family: "Courgette", cursive;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.parrafo-foto {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parrafo-foto p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #d5decb;
+  color: #d4ae9e;
+  font-family: "Quicksand", sans-serif;
+}
+
+.imgFotoNutris {
+  -webkit-box-shadow: 2px 2px 10px #666;
+          box-shadow: 2px 2px 10px #666;
+  width: 75%;
+}
+
+#nosotras {
+  color: #d4ae9e;
+  font-family: "Quicksand", sans-serif;
+}
+
+#recetarios,
+#contacto {
+  color: #d5decb;
+}
+
+#section-recetarios,
+#section-contacto {
+  text-align: center;
+}
+
+#tarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.estiloTarjeta {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 18rem;
+  height: 35rem;
+}
+
+.estiloImagen {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+}
+
+.tituloRecetario {
+  color: #d5decb;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.precioRecetario {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.botonRecetario {
+  background-color: #d4ae9e;
+  border-color: transparent;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 30px;
+  height: -webkit-fill-available;
+}
+
+.botonRecetario:hover {
+  background-color: #d5decb;
+  color: black;
+}
+
+.claseFooter {
+  background-color: #e2c59b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  margin-top: 10%;
+  position: absolute;
+  width: 100%;
+}
+
+.logoNutri {
+  width: 5%;
+}
+
+.iconoI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 43%;
+}
+
+#iconoInstagram {
+  font-size: 36px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contenedorInstagrams {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedorInstagrams a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: white;
+}
+
+.RecetariosYMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contenedorIndice {
+  display: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2%;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 45rem;
+  height: 40rem;
+}
+
+.contenedorFoto {
+  width: 50%;
+  height: 40rem;
+}
+
+.contenedorFoto img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.contenedorMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  background-color: #fffbf9;
+  font-family: "Quicksand", sans-serif;
+}
+
+.contenedorMenu span {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contenedorMenu i {
+  color: #d4ae9e;
+}
+
+.contenedorMenu i:hover {
+  color: black;
+}
+
+.contenedorMenu h1 {
+  color: #d4ae9e;
+  font-size: x-large;
+  letter-spacing: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.numeracionPostres {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+  font-size: 11px;
+}
+
+.postres .postreTitulo {
+  color: #d4ae9e;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.postres .postreTitulo li {
+  font-weight: lighter;
+  font-style: initial;
+}
+
+#contenedorIndiceSalado {
+  display: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 2%;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 45rem;
+  height: 40rem;
+}
+
+#contenedorIndiceSalado .contenedorMenu {
+  background-color: #fafff4;
+}
+
+#contenedorIndiceSalado .contenedorMenu span {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#contenedorIndiceSalado .contenedorMenu i {
+  color: #d5decb;
+}
+
+#contenedorIndiceSalado .contenedorMenu i:hover {
+  color: black;
+}
+
+#contenedorIndiceSalado .contenedorMenu h1 {
+  color: #d5decb;
+}
+
+#contenedorIndiceSalado .postres .postreTitulo {
+  color: #d5decb;
+}
+
+#contenedorIndiceSalado #btnSalado {
+  background-color: #d5decb;
+}
+
+#contenedorIndiceSalado #btnSalado:hover {
+  background-color: #d4ae9e;
+}
+/*# sourceMappingURL=style.css.map */

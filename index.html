@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BASES</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top" style="background: rgb(226, 197, 155)">
+        <div class="navbar-brand">
+            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#nosotras" id="nosotrasHover">
+                    <span class="icon">
+                        <i class="fas fa-info"></i>
+                    </span>
+                    <span class="items">NOSOTRAS</span>
+                </a>
+                <a class="navbar-item" href="#recetarios" id="recetariosHover">
+                    <span class="icon">
+                        <i class="fas fa-book"></i>
+                    </span>
+                    <span class="items">RECETARIOS</span>
+                </a>
+                <a class="navbar-item" href="#resume" id="cursosHover">
+                    <span class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span class="items">CURSOS</span>
+                </a>
+                <a class="navbar-item" href="#contacto" id="contactoHover">
+                    <span class="icon">
+                        <i class="fas fa-th-list"></i>
+                    </span>
+                    <span class="items">CONTACTO</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero is-fullheight is-fullheight-with-navbar" style="background: rgb(226, 197, 155)">
+        <div class="hero-body">
+            <div class="container" id="titulo">
+                <h1 class="title is-1 " style="color: #fbfaf8">
+                    BASES
+                </h1>
+                <h2 class="subtitle is-3" id="subtitulo" style="color: #fbfaf8">
+                    para encontrar tu estilo de vida saludable
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="section" id="about">
+        <div class="section-heading" id="sobre-mi">
+            <h3 class="title is-2" id="nosotras">NOSOTRAS</h3>
+            <div class="container" id="container">
+                <div class="parrafo-foto">
+                    <p> Nos hicimos amigas en primer año de la facultad. Cursamos juntas
+                        toda la
+                        carrera de
+                        Nutrición en la Universidad Nacional de Córdoba, rendimos todos los finales juntas (sisi,
+                        toooodos!), hicimos la tesis y nos recibimos junto con Sofi otra de nuestras amigas
+                        nutris!
+
+                        Pasamos muchas noches leyendo, riendo, estudiando, repasando y hasta llorando
+                        juntas. Y... de eso se trata la vida no? De compartir momentos y coleccionar
+                        experiencias; por eso hoy a casi 3 años de habernos recibido decidimos crear algo
+                        juntas!
+                        El comienzo de esta unión ya siendo Licenciadas en Nutrición parte del deseo de
+                        brindar una herramienta a todas aquellas personas que tengan ganas de explorar el
+                        mundo de la alimentación saludable que tanto nos apasiona!
+
+                        Asique primero que nada... ¡GRACIAS POR ESTAR ACÁ, LEYENDO ESTO! Esperamos de
+                        todo corazón que les guste.
+                    </p>
+                </div>
+                <div class="foto">
+                    <img src="./img/pili2.jpeg" class="imgFotoNutris">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="section-heading" id="section-recetarios">
+        <h3 class="title is-2" id="recetarios">RECETARIOS</h3>
+    </div>
+    <div class="RecetariosYMenu">
+        <div id="tarjetas"></div>
+
+        <!--DESCRIPCION RECETAS-->
+        <div id='contenedorIndice'>
+            <div class="contenedorFoto">
+                <img src="./img/indiceDulces.jpeg">
+            </div>
+            <div class="contenedorMenu">
+                <span>
+                    <i class="fas fa-times" id="cruz"></i>
+                </span>
+                <h1>INDICE</h1>
+                <div class="numeracionPostres">
+                    <div class="postres">
+                        <ul class="postreTitulo">BOMBONES
+                            <li>Bombones de coco y chocolate</li>
+                            <li>Bombones de quinoa pop y chocolate</li>
+                            <li>Bombones de chocolate 3x1</li>
+                            <li>Trufas</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">POSTRES DELICIOSOS
+                            <li>Flan sin huevo</li>
+                            <li>Crumble</li>
+                            <li>Alfajor de coco</li>
+                            <li>Mousse de palta, banana y cacao</li>
+                            <li>Cremita de chocoporotos</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">HELADITOS POSTA
+                            <li>Helado de banana y pera</li>
+                            <li>Yogur helado de frutos rojos y chips
+                                de chocolate amargo
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">YOGUR
+                            <li>Yogur natural</li>
+                            <li>Yogur con frutas</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">BEBIDAS QUE LA ROMPEN!
+                            <li>Frapuccino frozen</li>
+                            <li>Licuado verde</li>
+                            <li>Licuado rojo</li>
+                            <li>Licuado de coco</li>
+                            <li>Licuado de manzana y avena</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">BASICOS QUE NO FALLAN!
+                            <li>Granola</li>
+                            <li>Pancakes de pera sin tacc</li>
+                            <li>Masa de tarta dulce sin tacc</li>
+                            <li>Brownie de porotos</li>
+                            <li>Budin de zucchini</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="botonRecetario">
+                    Comprar
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id='contenedorIndiceSalado'>
+            <div class="contenedorFoto">
+                <img src="./img/indiceSaladas.jpeg">
+            </div>
+            <div class="contenedorMenu">
+                <span>
+                    <i class="fas fa-times" id="cruzSaladas"></i>
+                </span>
+                <h1>INDICE</h1>
+                <div class="numeracionPostres">
+                    <div class="postres">
+                        <ul class="postreTitulo">ENSALADAS</ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">BASICOS
+                            <li>Pan 100% integral</li>
+                            <li>Masa para tarta integral</li>
+                            <li>Masa de tarta sin tacc</li>
+                            <li>Masa para fajitas integrales</li>
+                            <li>Dosas</li>
+                            <li>Pan pita o pan árabe</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">CALDITOS CASEROS</ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">UNTABLES
+                            <li>Untable de castañas de Cajú</li>
+                            <li>Queso Crema</li>
+                            <li>Queso Cheddar Vegano</li>
+                            <li>Untable de girasol y zanahoria</li>
+                            <li>Pasta de man</li>
+                            <li>Queso cremoso de garbanzos</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">PLATOS PRINCIPALES
+                            <li>Falafels de garbanzos y arvejas</li>
+                            <li>Patitas de pollo</li>
+                            <li>Croquetas de coliflor</li>
+                            <li>Panqueques de remolacha</li>
+                            <li>Panqueques de batata</li>
+                            <li>Panqueques de calabaza</li>
+                            <li>Panqueques de espinaca</li>
+                            <li>Pastel de soja texturizada y calabaza</li>
+                            <li>Pastel de batata y pollo</li>
+                            <li>Hamburguesa de carne</li>
+                            <li>Hamburguesa de legumbres que no se desarman</li>
+                        </ul>
+                    </div>
+                    <div class="postres">
+                        <ul class="postreTitulo">SALEROS DE CONDIMENTOS</ul>
+                    </div>
+                </div>
+                <button class="botonRecetario" id="btnSalado">
+                    Comprar
+                </button>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="section-heading" id="section-contacto">
+        <h3 class="title is-2" id="contacto">CONTACTO</h3>
+    </div> -->
+
+    <footer class="claseFooter" id="contacto">
+        <span class="iconoI">
+            <i class="fab fa-instagram fa-lg" id="iconoInstagram"></i>
+        </span>
+        <div class="contenedorInstagrams">
+            <div id="instagramPili">
+                <a href="https://www.instagram.com/nutricion.prm/">nutricion.prm<img src="./img/logo-nutrición-prm.png"
+                        class="logoNutri"></a>
+            </div>
+            <div class="instagramVale">
+                <a href="https://www.instagram.com/nutricionsimple_/">nutricionsimple_<img
+                        src="./img/logo-nutrición-simple.png" class="logoNutri"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/script/index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+    <script src="/script/script.js"></script>
+
+
+
+</body>
+
+</html>
