@@ -88,10 +88,48 @@ function desapareceMenuSalado() {
         tarjetas.style.display = 'flex'
     });
 }
+function abrirModalFormulario() {
+    let modal = document.getElementById('modal')
+    document.body.addEventListener('click', () => {
+        modal.style.display = 'flex'
+    })
+}
+function cerrarModalFormulario() {
+    let tarjetas = document.getElementById('tarjetas')
+    let recetarioSalado = document.getElementById('contenedorIndiceSalado')
+    let recetarioDulce = document.getElementById('contenedorIndice')
+    let modal = document.getElementById('modal')
+    document.body.addEventListener('click', () => {
+        modal.style.display = 'none';
+        recetarioDulce.style.display = 'none'
+        recetarioSalado.style.display = 'none'
+        tarjetas.style.display = 'flex'
+    })
+}
+/* function pruebaemail(valor) {
+    re = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+    if (!re.exec(valor)) {
+        alert('email no valido');
+    }
+    else alert('email valido');
+} */
+
+
 function eventos() {
     document.getElementById("btn1").addEventListener("click", apareceMenuDulce);
     document.getElementById("cruz").addEventListener("click", desapareceMenuDulce);
     document.getElementById("btn2").addEventListener("click", apareceMenuSalado);
     document.getElementById("cruzSaladas").addEventListener("click", desapareceMenuSalado);
+    document.getElementById('btnSalado').addEventListener('click', abrirModalFormulario);
+    document.getElementById('cruzModal').addEventListener('click', cerrarModalFormulario);
+    document.getElementById('btnDulce').addEventListener('click', abrirModalFormulario);
+    document.getElementById('cruzModal').addEventListener('click', cerrarModalFormulario);
+    document.getElementById('btnCancelar').addEventListener('click', cerrarModalFormulario);
 
+
+}
+
+let sequence = [1, 1, 2, 3, 5, 8, 13];
+for (let i = 0; i < sequence.length; i++) {
+    console.log(sequence[i]);
 }

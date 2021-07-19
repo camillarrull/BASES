@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "styleSegundoPaso.scss"
+    ],
+    "names": [],
+    "file": "styleSegundoPaso.css"
+}

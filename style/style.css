@@ -223,32 +223,28 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70px;
+  height: 90px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 10%;
-  position: absolute;
   width: 100%;
+}
+
+.claseFooter p {
+  font-size: larger;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .logoNutri {
   width: 5%;
 }
 
-.iconoI {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 43%;
-}
-
-#iconoInstagram {
-  font-size: 36px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.contenedorInstagrams {
-  margin: 10px;
+.contenedorNutri {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,18 +252,48 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.contenedorInstagrams a {
+.instagram,
+.turnosWpp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  color: white;
 }
 
+#iconoInstagramP,
+#iconoInstagramV,
+#iconoWhatsappV,
+#iconoWhatsappP {
+  font-size: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/* .iconoI {
+    display: flex;
+    margin-left: 43%;
+}
+#iconoInstagram {
+    font-size: 36px;
+    align-self: center;
+}
+.contenedorInstagrams {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedorInstagrams a {
+    display: flex;
+    align-items: end;
+    color: white;
+} */
 .RecetariosYMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +440,7 @@ i {
 }
 
 #contenedorIndiceSalado .postres .postreTitulo {
-  color: #d5decb;
+  color: #b4c4a2;
 }
 
 #contenedorIndiceSalado #btnSalado {

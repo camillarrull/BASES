@@ -175,9 +175,11 @@
                         </ul>
                     </div>
                 </div>
-                <button class="botonRecetario">
+
+                <button class="botonRecetario" id='btnDulce'>
                     Comprar
                 </button>
+
 
             </div>
 
@@ -246,6 +248,34 @@
 
             </div>
         </div>
+        <div class="modal" id='modal'>
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">NECESITAMOS TUS DATOS!</p>
+                    <button class="delete" aria-label="close" id='cruzModal'></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g Alex Smith">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success">Continuar con la compra</button>
+                    <button class="button" id='btnCancelar'>Cancelar</button>
+                </footer>
+            </div>
+        </div>
 
 
     </div>
@@ -265,19 +295,50 @@
     </div> -->
 
     <footer class="claseFooter" id="contacto">
-        <span class="iconoI">
-            <i class="fab fa-instagram fa-lg" id="iconoInstagram"></i>
-        </span>
-        <div class="contenedorInstagrams">
-            <div id="instagramPili">
+
+        <div class="contenedorNutri">
+            <p>Lic. Rodriguez Pilar</p>
+            <div class='instagram'>
+                <span class="iconoI">
+                    <i class="fab fa-instagram fa-lg" id="iconoInstagramP"></i>
+                </span>
+
                 <a href="https://www.instagram.com/nutricion.prm/">nutricion.prm<img src="./img/logo-nutrición-prm.png"
                         class="logoNutri"></a>
+
             </div>
-            <div class="instagramVale">
+            <div class="turnosWpp">
+                <span class="iconoW">
+                    <i class="fab fa-whatsapp" id='iconoWhatsappP'></i>
+                </span>
+                <a
+                    href="https://api.whatsapp.com/send?phone=5493517556180&text=Hola!%20Quisiera%20sacar%20un%20turno!">turnos</a>
+            </div>
+
+        </div>
+        <div class="contenedorNutri">
+            <p>Lic. Valfre Alejandra</p>
+            <div class='instagram'>
+
+                <span class="iconoI">
+                    <i class="fab fa-instagram fa-lg" id="iconoInstagramV"></i>
+                </span>
+
                 <a href="https://www.instagram.com/nutricionsimple_/">nutricionsimple_<img
                         src="./img/logo-nutrición-simple.png" class="logoNutri"></a>
+
+            </div>
+            <div class="turnosWpp">
+                <span class="iconoW">
+                    <i class="fab fa-whatsapp" id='iconoWhatsappV'></i>
+                </span>
+
+                <a
+                    href="https://api.whatsapp.com/send?phone=5493512135597&text=Hola!%20Quisiera%20sacar%20un%20turno!">turnos</a>
+
             </div>
         </div>
+
     </footer>
     <script src="/script/index.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
