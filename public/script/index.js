@@ -51,6 +51,7 @@ function crearTarjetas() {
 
     }
 }
+
 //INFO RECETAS
 
 function apareceMenuDulce() {
@@ -121,12 +122,10 @@ function eventos() {
     document.getElementById("btn2").addEventListener("click", apareceMenuSalado);
     document.getElementById("cruzSaladas").addEventListener("click", desapareceMenuSalado);
     document.getElementById('btnSalado').addEventListener('click', abrirModalFormulario);
-    document.getElementById('cruzModal').addEventListener('click', cerrarModalFormulario);
+    //document.getElementById('cruzModal').addEventListener('click', cerrarModalFormulario);
     document.getElementById('btnDulce').addEventListener('click', abrirModalFormulario);
-    document.getElementById('cruzModal').addEventListener('click', cerrarModalFormulario);
-    document.getElementById('btnCancelar').addEventListener('click', cerrarModalFormulario);
-
-
+    //document.getElementById('cruzModal').addEventListener('click', cerrarModalFormulario);
+    //document.getElementById('btnCancelar').addEventListener('click', cerrarModalFormulario);
 }
 
 let sequence = [1, 1, 2, 3, 5, 8, 13];

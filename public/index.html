@@ -175,10 +175,13 @@
                         </ul>
                     </div>
                 </div>
-
-                <button class="botonRecetario" id='btnDulce'>
+                <form action="http://localhost:3001/checkout" method="POST">
+                    <input type="hidden" name="id" value="1">
+                    <input type="submit" value="comprar ahora" class="button" id="btnDulce">
+                </form>
+                <!-- <button class="botonRecetario" id='btnDulce'>
                     Comprar
-                </button>
+                </button> -->
 
 
             </div>
@@ -240,15 +243,19 @@
                         <ul class="postreTitulo">SALEROS DE CONDIMENTOS</ul>
                     </div>
                 </div>
-                <button class="botonRecetario" id="btnSalado">
+                <form action="http://localhost:3001/checkout" method="POST">
+                    <input type="hidden" name="id" value="2">
+                    <input type="submit" value="comprar ahora" class="button" id="btnSalado">
+                </form>
+                <!-- <button class="botonRecetario" id="btnSalado">
                     Comprar
-                </button>
+                </button> -->
 
 
 
             </div>
         </div>
-        <div class="modal" id='modal'>
+        <!-- <div class="modal" id='modal'>
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
@@ -256,7 +263,7 @@
                     <button class="delete" aria-label="close" id='cruzModal'></button>
                 </header>
                 <section class="modal-card-body">
-                    <div class="field">
+                    <div class="field" action="http://localhost:3001/checkout" method="POST">
                         <label class="label">Name</label>
                         <div class="control">
                             <input class="input" type="text" placeholder="e.g Alex Smith">
@@ -271,11 +278,13 @@
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success">Continuar con la compra</button>
+                    <button class="button is-success">Continuar
+                        con la
+                        compra</button>
                     <button class="button" id='btnCancelar'>Cancelar</button>
                 </footer>
             </div>
-        </div>
+        </div> -->
 
 
     </div>
