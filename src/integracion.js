@@ -94,8 +94,8 @@ app.get('/*', (req, res) => {
 });
 
 //SERVER
-app.listen(3001, () => {
-	console.log('server on port 3001')
+app.listen(2053, () => {
+	console.log('server on port 2053')
 })
 
 function findReceta(id) {
