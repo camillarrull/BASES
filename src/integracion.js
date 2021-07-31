@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 // SDK de Mercado Pago
 const mercadopago = require('mercadopago');
 const path = require('path');
+const fs = require('fs');
 
 //middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -94,8 +95,8 @@ app.get('/*', (req, res) => {
 });
 
 //SERVER
-const key = readFileSync('/etc/letsencrypt/live/francoromaniello.com-0001/privkey.pem', 'utf8');
-const cert = readFileSync('/etc/letsencrypt/live/francoromaniello.com-0001/fullchain.pem', 'utf8');
+const key = fs.readFileSync('/etc/letsencrypt/live/francoromaniello.com-0001/privkey.pem', 'utf8');
+const cert = fs.readFileSync('/etc/letsencrypt/live/francoromaniello.com-0001/fullchain.pem', 'utf8');
 
 app.listen(2053, () => {
 	console.log('server on port 2053')
