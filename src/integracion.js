@@ -94,9 +94,15 @@ app.get('/*', (req, res) => {
 });
 
 //SERVER
+const key = readFileSync('/etc/letsencrypt/live/francoromaniello.com-0001/privkey.pem', 'utf8');
+const cert = readFileSync('/etc/letsencrypt/live/francoromaniello.com-0001/fullchain.pem', 'utf8');
+
 app.listen(2053, () => {
 	console.log('server on port 2053')
 })
+
+const httpsServer = https.createServer({ key, cert }, app);
+httpsServer.listen(2053, '127.0.0.1', () => console.log(`Server on-line on 127.0.0.1:2053`));
 
 function findReceta(id) {
 	let element = null;
